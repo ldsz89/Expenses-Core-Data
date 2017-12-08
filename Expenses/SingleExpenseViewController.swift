@@ -45,12 +45,12 @@ class SingleExpenseViewController: UIViewController {
         let date = datePicker.date
         
         var expense: Expense?
-        
+
         if let existingExpense = existingExpense {
             existingExpense.name = name
             existingExpense.amount = amount
             existingExpense.date = date
-            
+
             expense = existingExpense
         } else {
             expense = Expense(name: name, amount: amount, date: date)
